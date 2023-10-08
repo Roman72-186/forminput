@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма карты лояльности</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.form {
+    margin: 25px;
+    width: 595px;
+    height: 332px;
+    flex-shrink: 0;
+    border-radius: 15px 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(107deg, #4C4C4C 0%, #1B1B1B 100%);
+    /* display: inline-block; */
+}
+
+.form__border {
+    width: 595px;
+    height: 332px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Рамка вокруг */
+.form__border::before {
+    content: '';
+    display: inline-block;
+    width: 579px;
+    height: 316px;
+    flex-shrink: 0;
+    margin: 8px;
+    border-radius: 15px 50px;
+    border: 1px solid #E2E0FF;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(107deg, #4C4C4C 0%, #1B1B1B 100%);
+}
+
+.star::before {
+    content: '';
+    background-image: url(/Star\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    fill: #E2E0FF;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 38px;
+}
+
+.text__investion {
+    display: inline-block;
+    position: absolute;
+    top: 108px;
+    left: 38px;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text__investion-border {
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text__investion-VRCPLATINUM {
+    display: inline-block;
+    position: absolute;
+    top: 27px;
+    left: 38px;
+    color: #E2E0FF;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.text__investion-PARTNER {
+    display: inline-block;
+    position: absolute;
+    top: 87px;
+    right: 38px;
+    color: #E2E0FF;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.all__container {
+    /* position: absolute; */
+    top: 260px;
+    left: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    
+    width: 440px;
+}
+
+.container1 {
+    margin-right: 10px ;
+}
+
+.container2 {
+}
+
+.form__input {
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+/* Обратная сторона */
+.LOGO__side {
+    margin: 25px;
+    width: 595px;
+    height: 332px;
+    flex-shrink: 0;
+    border-radius: 15px 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(107deg, #4C4C4C 0%, #1B1B1B 100%);
+    position: relative;
+}
+
+/* Рамка вокруг */
+.form__border-LOGO::before {
+    content: '';
+    display: inline-block;
+    width: 579px;
+    height: 316px;
+    flex-shrink: 0;
+    margin: 8px;
+    border-radius: 15px 50px;
+    border: 1px solid #E2E0FF;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(107deg, #4C4C4C 0%, #1B1B1B 100%);
+}
+
+/* .form__border-LOGO {
+    position: relative;
+} */
+
+.LOGO::before {
+    content: '';
+    background-image: url(/Group\ 9.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    fill: #E2E0FF;
+    flex-shrink: 0;
+    position: absolute;
+    top: 50px;
+    left: 181px;
+}
+
+.buttom__input {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px 20px;
+    /* box-shadow: 2px 2px 10px #000; */
+    background: #ffffff;
+
+    font-family: Montserrat, sans-serif;
+    color: #000000;
+    font-weight: 900;
+    margin-left: 50px;
+}
+
+.buttom__input:focus {
+    background: #000000;
+    color: #ffffff;
+}
+
+.buttom__input:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+        <div class="form">
+            <div class="form__border">
+                <span class="text__investion-VRCPLATINUM">VRC PLATINUM</span>
+                <span class="text__investion-PARTNER">PARTNER</span>
+                <span class="text__investion"><span class="text__investion-border">Инвестиции</span> в зарубежную<br> 
+                    недвижимость</span>
+                <!-- <div class="star"></div> -->
+            </div>
+    
+            <div class="all__container">
+                <form method="get" name="search" class="all__container">
+                        <label for="formName" class="form__name"></label>
+                        <input id="formName" type="text" value="name" class="form__input" disabled>
+                    
+                        <label for="formNumber" class="form__name"></label>
+                        <input id="formNumber" type="text" name="number" class="form__input" disabled>
+                </form>
+            </div>    
+        </div>
+<script>        
+    setTimeout(function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        
+        const formName = document.getElementById('formName');
+        formName.value = name;
+
+    console.log(name, formName);
+    }, 1000);
+</script>
+        
+        
+        <!-- <div class="LOGO__side">
+            <div class="form__border-LOGO">
+                <div class="LOGO"></div>
+            </div>
+        </div> -->
+        <button type="submit" id="buttom__input-btm" class="buttom__input">Отправка!</button>
+    
+</body>
+</html>
